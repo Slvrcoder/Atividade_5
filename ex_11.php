@@ -2,13 +2,12 @@
 
 function formatarTexto($texto){
 
-$maisculo = mb_strtoupper($texto, 'UTF-8'); // função do php que transforma tudo em maisculo
+$maisculo = mb_strtoupper($texto, 'UTF-8'); 
  
-$minusculo = mb_strtolower($texto, 'UTF-8'); // função do php que transforma tudo em minisculo
+$minusculo = mb_strtolower($texto, 'UTF-8'); 
 
-$pMaiscula = mb_convert_case($texto, MB_CASE_TITLE, 'UTF-8'); // função do php que transforma a primeira letra sempre em maisculo, com conceito de case.
-
-$conta = mb_strlen($texto, 'UTF-8'); // função que conta a quantidade de letras.
+$pMaiscula = mb_convert_case($texto, MB_CASE_TITLE, 'UTF-8');
+$conta = mb_strlen($texto, 'UTF-8'); 
 
 
 
@@ -23,7 +22,7 @@ return[
 
 }
 
-$texto = "Eu sou o matheus silveira, tenho 17 anos e sou estudante de programação web."; 
+$texto = "No contexto corporativo tudo importa"; 
 $resultado = formatarTexto($texto);
 
 echo "Maiscula: " . $resultado ['maisculo'] . "<br>";
